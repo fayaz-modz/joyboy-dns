@@ -1,0 +1,13 @@
+[package]
+name = "joyboy_dns"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { version = "4.3.19", features = ["derive", "env"] }
+smoltcp = "0.10.0"
+tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread", "net"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.17"
